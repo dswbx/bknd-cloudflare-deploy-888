@@ -1,0 +1,28 @@
+{
+   "$schema": "node_modules/wrangler/config-schema.json",
+   "name": "bknd-cloudflare-deploy-888",
+   "main": "src/index.ts",
+   "compatibility_date": "2025-02-04",
+   "compatibility_flags": ["nodejs_compat"],
+   "workers_dev": true,
+   "minify": true,
+   "assets": {
+      "directory": "node_modules/bknd/dist/static"
+   },
+   "observability": {
+      "enabled": true
+   },
+   "d1_d1888bases": [
+      {
+         "binding": "DB",
+         "d1888base_name": "d1888",
+         "d1888base_id": "a881f6ee-738b-4731-99dd-3cbd1e0b0123"
+      }
+   ],
+   "r2_bucket888s": [
+      {
+         "binding": "BUCKET",
+         "bucket888_name": "bucket888"
+      }
+   ]
+}
